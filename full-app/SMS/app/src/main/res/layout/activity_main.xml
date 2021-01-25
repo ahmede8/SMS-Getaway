@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/w">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="10"
+        android:hint="enter phone number"
+        android:id="@+id/phone"
+        android:fontFamily="monospace"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="140"
+        android:hint="enter sms"
+        android:layout_below="@+id/phone"
+        android:id="@+id/body"
+        android:fontFamily="monospace"
+        android:textSize="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send SMS"
+        android:layout_below="@+id/body"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn"
+        />
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="LAST UNSENT"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:id="@+id/unsent"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unsent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Phone X"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:id="@+id/number"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Unsent Body"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:id="@+id/bod"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bod"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Marked?"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:id="@+id/mark"/>
+
+
+
+
+</RelativeLayout>
